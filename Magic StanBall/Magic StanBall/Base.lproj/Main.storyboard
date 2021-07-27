@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_StanBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wjX-yr-k5F">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DfT-zb-HBC" userLabel="Top">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="255.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask and you shall receive..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3B-kB-z6t">
+                                                <rect key="frame" x="69.666666666666686" y="115.66666666666666" width="251" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="x3B-kB-z6t" firstAttribute="centerX" secondItem="DfT-zb-HBC" secondAttribute="centerX" id="5Pr-n3-nOH"/>
+                                            <constraint firstItem="x3B-kB-z6t" firstAttribute="centerY" secondItem="DfT-zb-HBC" secondAttribute="centerY" id="cxg-dv-CVX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErC-CT-Eo2" userLabel="MiddleView">
+                                        <rect key="frame" x="0.0" y="255.33333333333331" width="390" height="255.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="243" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="ball5" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ab-6i-VcZ" customClass="imageView">
+                                                <rect key="frame" x="76" y="16.333333333333371" width="238" height="222.66666666666666"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="1ab-6i-VcZ" secondAttribute="height" multiplier="107:100" id="KpU-0H-Xkp"/>
+                                                    <constraint firstAttribute="width" constant="238" id="mmf-Kj-IIn"/>
+                                                </constraints>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1ab-6i-VcZ" firstAttribute="centerX" secondItem="ErC-CT-Eo2" secondAttribute="centerX" id="NkI-ZP-0bj"/>
+                                            <constraint firstItem="1ab-6i-VcZ" firstAttribute="centerY" secondItem="ErC-CT-Eo2" secondAttribute="centerY" id="OxZ-SS-YNw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YO9-MW-KtI" userLabel="btmView">
+                                        <rect key="frame" x="0.0" y="510.66666666666657" width="390" height="255.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKm-PE-XuJ">
+                                                <rect key="frame" x="180" y="111.66666666666674" width="30" height="32"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="tintColor" red="1" green="0.023529411760000001" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Ask">
+                                                    <color key="titleColor" red="1" green="1" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="AskButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5S-Fu-BLp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PKm-PE-XuJ" firstAttribute="centerY" secondItem="YO9-MW-KtI" secondAttribute="centerY" id="1cZ-P3-ITA"/>
+                                            <constraint firstItem="PKm-PE-XuJ" firstAttribute="centerX" secondItem="YO9-MW-KtI" secondAttribute="centerX" id="HkN-Tj-E6G"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.19215686274509802" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wjX-yr-k5F" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mYR-Da-GkC"/>
+                            <constraint firstItem="wjX-yr-k5F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oe0-5r-1sd"/>
+                            <constraint firstItem="wjX-yr-k5F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pxa-Uu-od3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wjX-yr-k5F" secondAttribute="bottom" id="xte-kv-zgf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="1ab-6i-VcZ" id="pYB-oS-j8h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="27.69230769230769" y="88.151658767772503"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ball5" width="305" height="273.66665649414062"/>
+    </resources>
+</document>
