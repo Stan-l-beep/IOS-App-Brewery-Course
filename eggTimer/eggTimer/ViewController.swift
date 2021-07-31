@@ -55,7 +55,6 @@ class ViewController: UIViewController {
         do {
             player = try AVAudioPlayer(contentsOf: url)
             guard let player = player else { return }
-            player.numberOfLoops = 1
             player.prepareToPlay()
             player.play()
             
